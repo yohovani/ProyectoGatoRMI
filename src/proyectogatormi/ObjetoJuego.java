@@ -5,6 +5,7 @@
  */
 package proyectogatormi;
 
+import java.io.Serializable;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 
@@ -12,7 +13,7 @@ import java.rmi.server.UnicastRemoteObject;
  *
  * @author Yohovani Vargas
  */
-public class ObjetoJuego extends UnicastRemoteObject implements RMIRegistroJuego{
+public class ObjetoJuego extends UnicastRemoteObject implements RMIRegistroJuego,Serializable{
 	private int[][] matrizJuego;
 	private String jugador1;
 	private String jugador2;
